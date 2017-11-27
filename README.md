@@ -1,2 +1,2 @@
-# Jquery based blob over menu
-This is a jquery plugin which takes ul li based nav and creates a blob over the menu items that follows the mouse along the menu.
+# 3 Jquery based plugins
+Three simple jquery plugins that beginners can find very useful for their websites.
