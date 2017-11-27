@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style type="text/css">
+	.nav {
+		position: relative;
+		list-style: none;
+		background: black;
+		border-radius: 10px;
+		padding: 0;
+		display: inline-block;
+	}
+
+	.clear {
+		clear: both;
+		float: none !important;
+		position: absolute !important;
+	}
+
+	.nav li {
+		padding: 7px 0;
+		cursor: pointer;
+		float: left;
+		position: relative;
+		color: white;
+	}
+
+	.nav > li {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.nav li:first-child {
+		margin-left: 0;
+	}
+
+	.nav li ul {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 46px;
+		border-radius: 0 5px 5px 5px;
+		padding: 7px 10px;		
+		list-style: none;
+		background: black;
+	}
+
+	.nav li ul:before {
+	    content:"";
+	    width:0;
+	    height:0;
+	    position:absolute;
+	    background:#fff;
+	    left:5px;
+	    top:-14px;
+	    border:7px solid transparent;
+	    z-index:2;
+	    border-bottom-color:  #000;
+	}
+
+	.nav li ul:after {
+	    content:"";
+		width: 100%;
+		height: 14px;
+		position: absolute;
+		left: 0;
+		top: -14px;
+	}
+
+	.nav li ul li {
+		margin: 0;
+		white-space: nowrap;
+		float: none;
+	}
+
+	/*.nav li:hover ul, .nav li ul:hover {
+		display: block;
+
+	}*/
+
+	.alt-nav li {
+		float: left;
+		margin-left: 30px;
+		list-style: none;
+	}
+
+	.alt-nav-1 li {
+		text-align: center;
+		padding: 10px 0;
+		list-style: none;
+		width: 100px;
+		margin-bottom: 30px;
+	}
+</style>
+</head>
+<body>
+
+	<div>
+		<ul class="nav">
+			<li class="active">Home</li>
+			<li>About</li>
+			<li>
+				Product
+				<ul>
+					<li class='active'>Interview app</li>
+					<li>Mettl</li>
+					<li>Disha</li>
+				</ul>
+			</li>
+			<li>Services</li>
+			<li>Contact</li>
+		</ul>
+		<div class='clear'></div>
+		<br/>
+		<ul class="alt-nav" style="color: #000;">
+			<li class="active">Home</li>
+			<li>About</li>
+			<li>Products</li>
+			<li>Services</li>
+			<li>Contact</li>
+		</ul>
+		<div class='clear'></div>
+		<br/>
+		<ul class="alt-nav-1" style="color: #000;">
+			<li class="active">Home</li>
+			<li>About</li>
+			<li>Products</li>
+			<li>Services</li>
+			<li>Contact</li>
+		</ul>
+		<div class='clear'></div>
+	</div>
+
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="jquery-lava.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.nav, .alt-nav, .alt-nav-1').lavaMenu({bg: '#00accd'});
+		});
+	</script>
+</body>
+</html>
+
