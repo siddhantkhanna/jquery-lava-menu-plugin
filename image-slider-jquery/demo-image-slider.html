@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="../ext-res/bootstrap.css">
+</head>
+<body>
+
+	<div id='img-slider' class="mt-5 ml-5" style="height: 300px;">
+
+	</div>
+
+	<script type="text/javascript" src="../ext-res/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="jquery-slider.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var array = ['https://nationalzoo.si.edu/sites/default/files/animals/africanlion-005_0.jpg', 'https://i.pinimg.com/originals/ad/21/86/ad2186c3301997a31780d5ab600d71c9.jpg', 'https://c402277.ssl.cf1.rackcdn.com/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942', 'http://www.woburnsafari.co.uk/media/2835348/tigers-3_2-1.jpg?width=920&height=460&mode=crop'];
+
+			$('#img-slider').imgSlider(array);
+			
+		});
+	</script>
+</body>
+</html>
+
